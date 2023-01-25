@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Gato de Botas 2: O Último Pedido</title>
+</head>
+
+<body>
+    <div class="video-background">
+        <video class="video" autoplay loop muted>
+            <source src="./video/trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="header">
+        <a>
+            <img class="logo" src="./images/gato-de-botas-icon.jpg" alt="gato de botas image">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="info">
+            <img class="title-image" src="./images/titulo-gato-de-botas.png">
+            <p class="description">
+                Em Gato de Botas 2: O Último Pedido, O Gato de Botas descobre que sua paixão pela aventura cobrou seu preço: por conta de seu gosto pelo perigo e pelo desrespeito à segurança pessoal, ele queimou oito de suas nove vidas. Com apenas uma vida restante, o Gato precisa pedir ajuda para uma antiga parceira - que atualmente é sua rival e inimiga mortal, Kitty Pata Mansa - para continuar vivo. Então, o destemido bichano parte em uma jornada épica pela Floresta Negra para encontrar a mítica Estrela dos Desejos, capaz de proporcionar o legendário Último Desejo e restaurar suas nove vidas.
+            </p>
+            <button id="btn-trailer" onclick="openModal()" class="trailer-button">
+                Veja o Trailer
+            </button>
+        </div>
+        <img class="cat-img" src="./images/gato-de-botas.png">
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-modal-button" onclick="closeModal()">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qtHcEfpYIow" title="Trailer Oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
